@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\ReceptionController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +15,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('reception.home');
 });
+
+
+Route::group(['prefix' => 'reception'], function() {
+
+    Route::get('/', [ReceptionController::class, 'index'])->name('ReceptionHome');
+    
+    Route::get('/patients', [ReceptionController::class, 'PatientsList'])->name('PatientsList');
+   // Route::get('/visits', [AppointmentsController::class, 'customersvisits']);
+   // Route::get('/booking', [AppointmentsController::class, 'registerbooking']);
+   // Route::post('/appointment-start',[AppointmentsController::class, 'startservice'])->name('booking.start');
+   // Route::post('/appointment-end',[AppointmentsController::class, 'endservice'])->name('booking.end');
+   // Route::post('/savebooking', [AppointmentsController::class, 'savebooking'])->name('savebooking');
+    }
+    );
