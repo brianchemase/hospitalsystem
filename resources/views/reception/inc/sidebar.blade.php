@@ -12,7 +12,7 @@
                 <li class="submenu">
                     <a href="#"><i class="fas fa-user-plus"></i> <span> Patients Visits</span> <span class="menu-arrow"></span></a>
                     <ul>
-                        <li><a href="{{URL::to('/reception/patients')}}">Register Patient</a></li>
+                        <li><a href="{{route('PatientsList')}}">Register Patient</a></li>
                         <li><a href="{{route('PatientsList')}}">Patients List</a></li>
                         
                     </ul>
@@ -27,8 +27,8 @@
                 <li class="submenu">
                     <a href="#"><i class="fas fa-building"></i> <span> Labs</span> <span class="menu-arrow"></span></a>
                     <ul>
-                        <li><a href="add-department.html">Department Add</a></li>
-                        <li><a href="departments.html">Department List</a></li>
+                        <li><a href="#">Department Add</a></li>
+                        <li><a href="#">Department List</a></li>
                     </ul>
                 </li>
                 <li> 
@@ -43,16 +43,16 @@
                 <li class="submenu">
                     <a href="#"><i class="fas fa-file-invoice-dollar"></i> <span> Accounts</span> <span class="menu-arrow"></span></a>
                     <ul>
-                        <li><a href="fees-collections.html">Fees Collection</a></li>
-                        <li><a href="expenses.html">Expenses</a></li>
-                        <li><a href="salary.html">Salary</a></li>
-                        <li><a href="add-fees-collection.html">Add Fees</a></li>
-                        <li><a href="add-expenses.html">Add Expenses</a></li>
-                        <li><a href="add-salary.html">Add Salary</a></li>
+                        <li><a href="#">Fees Collection</a></li>
+                        <li><a href="#">Expenses</a></li>
+                        <li><a href="#">Salary</a></li>
+                        <li><a href="#">Add Fees</a></li>
+                        <li><a href="#">Add Expenses</a></li>
+                        <li><a href="#">Add Salary</a></li>
                     </ul>
                 </li>
                 <li> 
-                    <a href="holiday.html"><i class="fas fa-holly-berry"></i> <span>Holiday</span></a>
+                    <a href="#"><i class="fas fa-holly-berry"></i> <span>Holiday</span></a>
                 </li>
                 
 
@@ -60,13 +60,13 @@
                     <span>Actions</span>
                 </li>
                 <li> 
-                    <a href="holiday.html"><i class="fas fa-holly-berry"></i> <span>History Logs</span></a>
+                    <a href="#"><i class="fas fa-holly-berry"></i> <span>History Logs</span></a>
                 </li>
                 <li> 
-                    <a href="holiday.html"><i class="fas fa-key"></i> <span>Change Password</span></a>
+                    <a href="#"><i class="fas fa-key"></i> <span>Change Password</span></a>
                 </li>
                 <li> 
-                    <a href="holiday.html"><i class="fas fa-sign-out-alt"></i> <span>Logout</span></a>
+                    <a href="#"><i class="fas fa-sign-out-alt"></i> <span>Logout</span></a>
                 </li>
 
             </ul>
